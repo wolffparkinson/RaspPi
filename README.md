@@ -1,6 +1,8 @@
 # RaspPi
+Raspberry Pi interactions built using Blazor (.NET Core 7)
 
-## Examples
+
+## Features
 
 ### Auto Toggle
 
