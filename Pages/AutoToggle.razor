@@ -1,0 +1,26 @@
+@page "/auto-toggle"
+
+<PageTitle>Auto Toggle</PageTitle>
+
+<div class="container-fluid">
+  <h1><span class="fas fa-stopwatch"></span> Auto Toggle</h1>
+  <hr />
+  <span>Periodically send ON/OFF signal to GPIO-17 at set intervals</span>
+  <div class="mt-4">
+    <div class="row mb-3">
+      <div class="col">
+        <label for="interval">Interval : </label>
+        <input id="interval" type="number" oninput="@OnInvervalInput" />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <div class="d-inline-block me-1 form-check-label">Enabled</div>
+        <div class="form-check form-switch d-inline-block">
+          <input type="checkbox" class="form-check-input" id="enabled" @bind-value="@Enabled" />
+          <label class="form-check-label"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
